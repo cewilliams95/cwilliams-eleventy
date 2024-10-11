@@ -1,0 +1,15 @@
+---js
+{
+	title: "Professional Work - Chris Williams",
+	layout: "/layouts/base.njk",
+	tag: "Professional"
+}
+const eleventyNavigation = {
+	key: "Professional",
+	order: 3
+};
+---
+<h1>Professional Archive</h1>
+
+{% set postslist = collections[ tag ] %}
+{% include "postslist.njk" %}

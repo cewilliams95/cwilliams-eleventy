@@ -1,0 +1,15 @@
+---js
+{
+	title: "Personal Projects - Chris Williams",
+	layout: "/layouts/base.njk",
+	tag: "Personal"
+}
+const eleventyNavigation = {
+	key: "Personal",
+	order: 2
+};
+---
+<h1>Personal Archive</h1>
+
+{% set postslist = collections[ tag ] %}
+{% include "postslist.njk" %}
