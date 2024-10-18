@@ -1,0 +1,18 @@
+---js
+const eleventyComputed = {
+	title: "About Me - Chris Williams",
+	layout: "/layouts/base.njk",
+};
+const eleventyNavigation = {
+	key: "About",
+	order: 1
+};
+
+const styleIdentifier = "about";
+---
+{%- css %}
+{% include "public/css/about.css" %}
+{% endcss %}
+<h1>About Me</h1>
+
+Hey, I'm Chris Williams. I'm a web developer with <a target="_blank" href="https://ny-ave.com/">New York Ave</a>

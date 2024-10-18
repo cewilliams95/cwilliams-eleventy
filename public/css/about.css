@@ -1,0 +1,19 @@
+body.about .contact-button {
+	background: var(--about-title);
+	border-color: var(--about-title);
+	color: var(--about-background) !important;
+}
+body.about .contact-button:hover {
+	background: transparent;
+	border-color: white;
+	color: white !important;
+}
+body.about {
+	background: var(--about-background);
+}
+body.about h1, body.about .nav-item a {
+	color: var(--about-title);
+}
+p {
+	color: var(--about-shadow);
+}

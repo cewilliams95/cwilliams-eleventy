@@ -1,14 +1,19 @@
 ---js
-{
+const eleventyComputed = {
 	title: "Personal Projects - Chris Williams",
 	layout: "/layouts/base.njk",
 	tag: "Personal"
-}
+};
 const eleventyNavigation = {
 	key: "Personal",
 	order: 2
 };
+
+const styleIdentifier = "personal";
 ---
+{%- css %}
+{% include "public/css/personal.css" %}
+{% endcss %}
 <h1>Personal Archive</h1>
 
 {% set postslist = collections[ tag ] %}

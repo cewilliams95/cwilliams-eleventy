@@ -1,0 +1,38 @@
+body.contact .contact-button {
+	background: var(--contact-title);
+	border-color: var(--contact-title);
+	color: var(--contact-background) !important;
+}
+body.abcontactout .contact-button:hover {
+	background: transparent;
+	border-color: white;
+	color: white !important;
+}
+body.contact {
+	background: var(--contact-background);
+}
+body.contact h1, body.contact .nav-item a {
+	color: var(--contact-title);
+}
+p {
+	color: var(--contact-shadow);
+}
+
+.email-wrap a {
+	width: auto;
+	max-width: 250px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 15px;
+	background: var(--contact-title);
+	color: var(--contact-background) !important;
+	text-decoration: none;
+	border-radius: 25px;
+	padding: 12px 24px;
+}
+.email-wrap svg {
+	width: 30px;
+	height: auto;
+	fill: var(--contact-background);
+}

@@ -1,0 +1,28 @@
+body.personal {
+	background: var(--personal-background);
+}
+body.personal .contact-button {
+	background: var(--personal-title);
+	border-color: var(--personal-title);
+	color: var(--personal-background) !important;
+}
+body.personal .contact-button:hover {
+	background: transparent;
+	border-color: white;
+	color: white !important;
+}
+body.personal h1, body.personal .nav-item a {
+	color: var(--personal-title);
+}
+body.personal .postlist-item:before, body.personal .postlist-date {
+	color: var(--personal-shadow);
+	font-weight: 500 !important;
+}
+body.personal a.postlist-link {
+	color: var(--personal-title) !important;
+	transition: 0.5s ease;
+}
+body.personal a.postlist-link:hover {
+	opacity: 0.75;
+}
+
