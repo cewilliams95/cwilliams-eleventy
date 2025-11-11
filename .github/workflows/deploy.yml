@@ -28,6 +28,6 @@ jobs:
           legacy_allow_rsa_hostkeys: "true"
           path: _site/
           remote_path: /var/www/cwilliams.me/_site
-          remote_host: cwilliams.me
+          remote_host: ${{secrets.SSH_DEPLOY_HOST }}
           remote_user: root
           remote_key: ${{ secrets.SSH_DEPLOY_KEY }}
