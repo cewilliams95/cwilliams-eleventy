@@ -13,8 +13,14 @@ const styleIdentifier = "about";
 {%- css %}
 {% include "public/css/about.css" %}
 {% endcss %}
-<h1>About Me</h1>
 
-<p>Hey, I'm Chris Williams. I'm a web developer with <a target="_blank" href="https://ny-ave.com/">New York Ave</a>. I've been a web developer for marketing agencies for 10 years and I've worked on websites ranging from small local business to international corporations. I've been fortunate to work with a great interdisciplinary team that delivers high quality work for all of our clientele. We have consistently taken visions from concept, to storyboard, to a custom-designed responsive website.</p>
-<p>When I'm not working on the next project I'm with my wife, keeping our son from chasing our dog and cat or planning our next trip to the mountains. I like to make fantasy art, play games, collect cardboard, and stay in touch with my family and friends.</p>
- <p>Feel free to <a href="/contact/">reach out</a> if you'd like to connect!</p>
+<section class="bg-gray-200 p-12 rounded-2xl shadow-xl mb-120"style="background: var(--about-title);">
+	<h1 class="text-3xl font-bold mb-4" style="color: var(--about-background);">About Me</h1>
+
+	<div >
+		<p class="text-gray-600 mb-2">Hey, I'm Chris Williams. I'm a web developer with <a target="_blank" href="https://ny-ave.com/">New York Ave</a>. I've been a web developer for marketing agencies for 10 years and I've worked on websites ranging from small local business to international corporations. I've been fortunate to work with a great interdisciplinary team that delivers high quality work for all of our clientele. We have consistently taken visions from concept, to storyboard, to a custom-designed responsive website.</p>
+		<p class="text-gray-600 mb-2">When I'm not working on the next project I'm with my wife, keeping our son from chasing our dog and cat or planning our next trip to the mountains. I like to make fantasy art, play games, collect cardboard, and stay in touch with my family and friends.</p>
+		<p class="text-gray-600">Feel free to <a href="/contact/">reach out</a> if you'd like to <a class="underline" href="/contact/">connect!</a></p>
+	</div>
+</div>
+

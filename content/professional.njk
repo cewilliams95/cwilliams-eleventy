@@ -14,26 +14,71 @@ const styleIdentifier = "professional";
 {%- css %}
 {% include "public/css/professional.css" %}
 {% endcss %}
-<section>
+<section class="bg-gray-200 p-12 rounded-2xl shadow-xl mb-120">
 
-	<div class="flex flex-col gap-2 p-8 sm:flex-row sm:items-center sm:gap-6 sm:py-4 ...">
-  <img class="mx-auto block h-24 rounded-full sm:mx-0 sm:shrink-0" src="../public/img/Chris-NYA.jpg" alt="" />
+  <h1 class="mb-12 text-6xl text-center font-weight-500 text-black ">NEWYORKAVE</h1>
+
+	<div class="mb-6 mx-auto max-w-sm flex flex-col gap-2 p-8 sm:flex-row sm:items-center sm:gap-6 sm:py-4 bg-white rounded-2xl shadow-xl/10">
+  <img class="max-w-24 h-24 object-cover mx-auto block rounded-full sm:mx-0 sm:shrink-0" src="../public/img/Chris-NYA.jpg" alt="" />
   <div class="space-y-2 text-center sm:text-left">
     <div class="space-y-0.5">
       <p class="text-lg font-semibold text-black">Chris Williams</p>
       <p class="font-medium text-gray-500">Senior Developer</p>
+      <p class="font-sm text-gray-400">2017 - Present</p>
     </div>
-    <button class="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 ...">
-      Message
-    </button>
   </div>
 </div>
+	<p class="text-gray-600 mb-12 text-center max-w-xl mx-auto"><a target="_blank" class="font-bold text-sky-500 hover:text-sky-700" href="https://ny-ave.com/">New York Ave</a> is a full-service digital agency located in DeLand, FL and serving clients across the country. With a great team of creatives, we've brought life to brands and made dozens of custom websites.
 
-	<div class="aside content">
-		<h1>New York Ave</h1>
-		<p><a target="_blank" href="https://ny-ave.com/">New York Ave</a> is a full-service digital agency located in DeLand, FL and serving clients across the country. With a great team of creatives, we've brought life to brands and made dozens of custom websites.
-	</div>
-	<div class="aside image">
-		{# <img src="/images/nyave-office.jpg" alt="New York Ave Office"> #}
-	</div>
+	<div class="max-w-5xl mx-auto px-6 -mb-48">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+
+      <!-- Card 1 — scrolls UP -->
+      <div class="card card-up relative bg-white rounded-2xl shadow-xl/10 p-8 " style="">
+        <h3 eleventy:id-ignore class=" text-3xl mb-3 text-black">Business<br><span class="font-bold">Needs</span></h3>
+        <p class="text-sm leading-relaxed text-gray-600" >
+          I have followed business needs and requirements to build what is needed. Most of the time it is a custom-designed responsive website built on <span class="font-bold">WordPress</span>, but I've also built custom web applications with <span class="font-bold">React and Firebase</span>, payment gateways with <span class="font-bold">PHP</span>, CMS plugins, and development tools.
+        </p>
+      </div>
+
+      <!-- Card 2 — scrolls DOWN -->
+      <div class="card card-down relative bg-white rounded-2xl shadow-xl/10 p-8" style="">
+        <h3 eleventy:id-ignore class=" text-3xl mb-3 text-black">Product<br><span class="font-bold">Ownership</span></h3>
+        <p class="text-sm leading-relaxed text-gray-600" >
+          From the start of my time at New York Ave, I've advised and confidently <span class="font-bold">taken the lead</span> of our website development projects and infrastructure. I spearheaded the transition to a new CMS and hosting provider, transferring all of our existing clients with no interruptions in service.
+        </p>
+      </div>
+
+      <!-- Card 3 — scrolls UP -->
+      <div class="card card-up relative bg-white rounded-2xl shadow-xl/10 p-8 " style="">
+        <h3 eleventy:id-ignore class=" text-3xl mb-3 text-black">Team<br><span class="font-bold">Player</span></h3>
+        <p class="text-sm leading-relaxed text-gray-600" >
+          New York Ave excels at delivering high quality work because of the talented, <span class="font-bold">interdisciplinary team</span> we have. I am happy to work closely with designers, creative leads, and sales to make sure our goals all stay aligned.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
 </section>
+
+
+<script>
+    // Parallax scroll: cards 1 & 3 drift up, card 2 drifts down
+    const strength = 0.12; // how much movement per scroll px
+
+    function onScroll() {
+      const scrollY = window.scrollY;
+
+      document.querySelectorAll('.card-up').forEach(el => {
+        el.style.transform = `translateY(${-scrollY * strength}px)`;
+      });
+
+      document.querySelectorAll('.card-down').forEach(el => {
+        el.style.transform = `translateY(${scrollY * strength}px)`;
+      });
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll(); // run once on load
+  </script>

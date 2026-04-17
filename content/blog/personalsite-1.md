@@ -4,6 +4,7 @@ description: I finally have given in and stopped overcomplicating what should be
 date: 2024-10-10
 tags: Personal
 ---
+
 I have waffled on my personal site and gone through several iterations and tech stacks to finally land on something minimal and simple. Doing personal projects in my now very limited free-time since becoming a father has led me to triage problems and prioritize what really matters in a more sensible way. No, I don't need a deep database schema for what amounts to a personal blog. Keeping the simple things simple allows me to dive into more projects that may require more technologies I want to learn and wont become overwhelming.
 
 Leveraging [11ty](https://www.11ty.dev/) has helped me get a static site up and running very quickly and I'd like to try it out for more projects going forward, not to mention it's open source. The ability to write a blog post in Markdown with a simple-to-understand frontmatter is a godsend to someone that, like me, doesn't necessarily need or want an admin interface.

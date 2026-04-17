@@ -11,9 +11,10 @@ body.about .contact-button:hover {
 body.about {
 	background: var(--about-background);
 }
-body.about h1, body.about .nav-item a {
+body.about h1,
+body.about .nav-item a {
 	color: var(--about-title);
 }
-p {
+/* p {
 	color: var(--about-shadow);
-}
+} */

@@ -11,18 +11,18 @@ body.professional .contact-button:hover {
 	border-color: white;
 	color: white !important;
 }
-body.professional h1, body.professional .nav-item a {
+/* body.professional h1, body.professional .nav-item a {
 	color: var(--professional-title);
-}
-body.professional .postlist-item:before, body.professional .postlist-date {
+} */
+body.professional .postlist-item:before,
+body.professional .postlist-date {
 	color: #d3d3d3;
 	font-weight: 500 !important;
 }
-body.professional a.postlist-link {
+/* body.professional a.postlist-link {
 	color: var(--professional-title) !important;
 	transition: 0.5s ease;
 }
 body.professional a.postlist-link:hover {
 	opacity: 0.75;
-}
-
+} */
