@@ -46,11 +46,19 @@ body.contact {
 	}
 	button[type="submit"] {
 		background: var(--contact-title);
-		border-color: var(--contact-title);
+		border: 2px solid var(--contact-title);
 		color: var(--contact-background) !important;
 		align-self: flex-end;
 		padding: 12px 26px;
 		border-radius: 25px;
+		cursor: pointer;
+		transition: all 0.4s ease-in-out;
+		font-weight: 700;
+		&:hover {
+			background: transparent;
+			border-color: var(--contact-title);
+			color: var(--contact-title) !important;
+		}
 	}
 }
 
