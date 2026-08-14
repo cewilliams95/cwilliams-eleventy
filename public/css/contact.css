@@ -1,21 +1,57 @@
-body.contact .contact-button {
-	background: var(--contact-title);
-	border-color: var(--contact-title);
-	color: var(--contact-background) !important;
-}
-body.abcontactout .contact-button:hover {
-	background: transparent;
-	border-color: white;
-	color: white !important;
-}
 body.contact {
 	background: var(--contact-background);
-}
-body.contact h1, body.contact .nav-item a {
-	color: var(--contact-title);
-}
-p {
-	color: var(--contact-shadow);
+	.contact-button {
+		background: var(--contact-title);
+		border-color: var(--contact-title);
+		color: var(--contact-background) !important;
+	}
+	.contact-button:hover {
+		background: transparent;
+		border-color: white;
+		color: white !important;
+	}
+	h1 {
+		font-size: 5rem;
+		font-weight: 900;
+		text-align: center;
+	}
+	h1,
+	.nav-item a {
+		color: var(--contact-title);
+	}
+	p {
+		color: var(--contact-shadow);
+	}
+	form {
+		max-width: 700px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		input,
+		textarea {
+			background: #123464aa;
+			border-radius: 20px;
+			margin: 10px;
+			color: #fff;
+			font-weight: 400;
+			padding: 5px 25px;
+		}
+		label {
+			display: flex;
+			flex-direction: column;
+			color: var(--contact-title);
+			font-weight: 500;
+		}
+	}
+	button[type="submit"] {
+		background: var(--contact-title);
+		border-color: var(--contact-title);
+		color: var(--contact-background) !important;
+		align-self: flex-end;
+		padding: 12px 26px;
+		border-radius: 25px;
+	}
 }
 
 .email-wrap a {
